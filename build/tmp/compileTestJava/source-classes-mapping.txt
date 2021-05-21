@@ -1,0 +1,4 @@
+com/crud/tasks/TasksApplicationTests.java
+ com.crud.tasks.TasksApplicationTests
+com/crud/tasks/trello/client/TrelloClientTest.java
+ com.crud.tasks.trello.client.TrelloClientTest
