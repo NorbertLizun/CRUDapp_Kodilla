@@ -3,18 +3,16 @@ package com.crud.tasks.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-import java.util.List;
-
-@Data
 @AllArgsConstructor
+@Component
+@Data
 @NoArgsConstructor
-public class TrelloCardDto {
+public class TrelloCard {
 
     private String name;
     private String description;
     private String pos;
     private String listId;
-   // private TrelloBadgesDto badges;
-
 }
