@@ -7,6 +7,7 @@ import com.crud.tasks.domain.TrelloBoardDto;
 import com.crud.tasks.domain.TrelloCardDto;
 import com.crud.tasks.trello.client.TrelloClient;
 import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,15 +28,20 @@ public class TrelloService {
         return trelloClient.getTrelloBoards();
     }
 
+
     public CreatedTrelloCardDto createTrelloCard(final TrelloCardDto trelloCardDto) {
+        System.out.println("TESTER");
         CreatedTrelloCardDto newCard = trelloClient.createNewCard(trelloCardDto);
-        ofNullable(newCard).ifPresent(card -> emailService.send(
-                new Mail(
-                        adminConfig.getAdminMail(),
-                        SUBJECT,
-                        "New card: " + trelloCardDto.getName() + " has been created on your Trello account",
-                        null
-                )));
+        ofNullable(newCard).ifPresent(card -> {
+            Mail mail = new Mail.MailBuilder()
+                    .mailTo(adminConfig.getAdminMail())
+                    .subject(SUBJECT)
+                    .message("New card: " + trelloCardDto.getName() + " has been created on your Trello account")
+                    .toCc(null)
+                    .build();
+            emailService.send(mail);
+        });
+
         return newCard;
     }
 
