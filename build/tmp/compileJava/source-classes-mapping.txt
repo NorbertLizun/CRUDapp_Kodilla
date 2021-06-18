@@ -1,0 +1,65 @@
+com/crud/tasks/controller/TaskController.java
+ com.crud.tasks.controller.TaskController
+com/crud/tasks/domain/TrelloCardDto.java
+ com.crud.tasks.domain.TrelloCardDto
+com/crud/tasks/domain/TaskDto.java
+ com.crud.tasks.domain.TaskDto
+com/crud/tasks/domain/TrelloBoard.java
+ com.crud.tasks.domain.TrelloBoard
+com/crud/tasks/domain/TrelloList.java
+ com.crud.tasks.domain.TrelloList
+com/crud/tasks/controller/TaskNotFoundException.java
+ com.crud.tasks.controller.TaskNotFoundException
+com/crud/tasks/domain/AttachmentByType.java
+ com.crud.tasks.domain.AttachmentByType
+com/crud/tasks/domain/TrelloListDto.java
+ com.crud.tasks.domain.TrelloListDto
+com/crud/tasks/TasksApplication.java
+ com.crud.tasks.TasksApplication
+com/crud/tasks/controller/TrelloController.java
+ com.crud.tasks.controller.TrelloController
+com/crud/tasks/domain/Trello.java
+ com.crud.tasks.domain.Trello
+com/crud/tasks/domain/TrelloBadgesDto.java
+ com.crud.tasks.domain.TrelloBadgesDto
+com/crud/tasks/service/MailCreatorService.java
+ com.crud.tasks.service.MailCreatorService
+com/crud/tasks/trello/validator/TrelloValidator.java
+ com.crud.tasks.trello.validator.TrelloValidator
+com/crud/tasks/domain/CreatedTrelloCardDto.java
+ com.crud.tasks.domain.CreatedTrelloCardDto
+com/crud/tasks/mapper/TrelloMapper.java
+ com.crud.tasks.mapper.TrelloMapper
+com/crud/tasks/domain/Mail.java
+ com.crud.tasks.domain.Mail
+ com.crud.tasks.domain.Mail$MailBuilder
+com/crud/tasks/config/CoreConfiguration.java
+ com.crud.tasks.config.CoreConfiguration
+com/crud/tasks/trello/config/TrelloConfig.java
+ com.crud.tasks.trello.config.TrelloConfig
+com/crud/tasks/trello/client/TrelloClient.java
+ com.crud.tasks.trello.client.TrelloClient
+com/crud/tasks/mapper/TaskMapper.java
+ com.crud.tasks.mapper.TaskMapper
+com/crud/tasks/service/DbService.java
+ com.crud.tasks.service.DbService
+com/crud/tasks/domain/TrelloBoardDto.java
+ com.crud.tasks.domain.TrelloBoardDto
+com/crud/tasks/domain/Task.java
+ com.crud.tasks.domain.Task
+com/crud/tasks/controller/StaticWebPageController.java
+ com.crud.tasks.controller.StaticWebPageController
+com/crud/tasks/config/AdminConfig.java
+ com.crud.tasks.config.AdminConfig
+com/crud/tasks/trello/facade/TrelloFacade.java
+ com.crud.tasks.trello.facade.TrelloFacade
+com/crud/tasks/domain/TrelloCard.java
+ com.crud.tasks.domain.TrelloCard
+com/crud/tasks/repository/TaskRepository.java
+ com.crud.tasks.repository.TaskRepository
+com/crud/tasks/service/SimpleEmailService.java
+ com.crud.tasks.service.SimpleEmailService
+com/crud/tasks/service/TrelloService.java
+ com.crud.tasks.service.TrelloService
+com/crud/tasks/scheduler/EmailScheduler.java
+ com.crud.tasks.scheduler.EmailScheduler
