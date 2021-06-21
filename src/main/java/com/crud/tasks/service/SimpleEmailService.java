@@ -1,5 +1,7 @@
 package com.crud.tasks.service;
 
+import com.crud.tasks.config.AdminConfig;
+import com.crud.tasks.config.CompanyConfig;
 import com.crud.tasks.domain.Mail;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +12,10 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
+import java.nio.file.AtomicMoveNotSupportedException;
 import java.util.Optional;
 
 @Slf4j
@@ -53,4 +58,5 @@ public class SimpleEmailService {
         mailMessage.setText(mailCreatorService.buildTrelloCardEmail(mail.getMessage()));
         return mailMessage;
     }
+
 }
