@@ -29,7 +29,7 @@ public class EmailScheduler {
         }
     }
 
-    @Scheduled(fixedDelay = 10000)
+    //@Scheduled(fixedDelay = 10000)
     public void sendInformationEmail() {
         long size = taskRepository.count();
         simpleEmailService.send(
